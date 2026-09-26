@@ -6,6 +6,15 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
   test:
     timeout-minutes: 60
@@ -26,6 +35,9 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
+      - name: Clear previous test output
+        run: rm -rf allure-results allure-report playwright-report reports/test-results
+
       - name: Run Playwright tests
         run: npx playwright test
 
@@ -37,3 +49,25 @@ jobs:
           path: playwright-report/
           if-no-files-found: ignore
           retention-days: 14
+
+      - name: Generate Allure report
+        if: always()
+        run: npx allure generate allure-results --clean
+
+      - name: Upload Allure report for GitHub Pages
+        if: always() && github.event_name == 'push'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: allure-report/
+
+  deploy-report:
+    if: always() && github.event_name == 'push' && needs.test.result != 'cancelled'
+    needs: test
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy Allure report to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

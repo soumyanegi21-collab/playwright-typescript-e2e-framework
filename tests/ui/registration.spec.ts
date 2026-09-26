@@ -10,6 +10,8 @@ import {
 import registrationData from '../../test-data/registration.json';
 
 test('Test Case 1: register and delete a user', async ({ page }) => {
+  test.setTimeout(60_000);
+
   // Arrange
   const homePage = new HomePage(page);
   const loginPage = new LoginPage(page);

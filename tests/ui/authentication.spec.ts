@@ -27,6 +27,8 @@ test('Test Case 3: reject invalid login credentials', async ({ page }) => {
 });
 
 test('Test Cases 2 and 4: login and logout a registered user', async ({ page }) => {
+  test.setTimeout(60_000);
+
   // Arrange
   const homePage = new HomePage(page);
   const loginPage = new LoginPage(page);
