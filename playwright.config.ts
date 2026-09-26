@@ -19,8 +19,8 @@ export default defineConfig({
   outputDir: 'reports/test-results',
   reporter: [
     ['list'],
-    ['html', { outputFolder: 'reports/html', open: 'never' }],
-    ['allure-playwright', { resultsDir: 'reports/allure-results' }],
+    ['html', { outputFolder: 'playwright-report', open: 'never' }],
+    ['allure-playwright', { resultsDir: 'allure-results' }],
   ],
   use: {
     baseURL,

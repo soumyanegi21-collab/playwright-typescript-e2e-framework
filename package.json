@@ -11,10 +11,10 @@
     "test:api": "playwright test tests/api",
     "test:headed": "playwright test --headed",
     "test:debug": "playwright test --debug",
-    "report": "playwright show-report reports/html",
-    "allure:generate": "allure generate reports/allure-results --clean -o reports/allure-report",
-    "allure:open": "allure open reports/allure-report",
-    "allure:serve": "allure serve reports/allure-results"
+    "report": "playwright show-report playwright-report",
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results"
   },
   "keywords": [
     "playwright",
