@@ -1,0 +1,44 @@
+{
+  "catalog": [
+    { "id": 1, "title": "Test Case 1: Register User" },
+    { "id": 2, "title": "Test Case 2: Login User with correct email and password" },
+    { "id": 3, "title": "Test Case 3: Login User with incorrect email and password" },
+    { "id": 4, "title": "Test Case 4: Logout User" },
+    { "id": 5, "title": "Test Case 5: Register User with existing email" },
+    { "id": 6, "title": "Test Case 6: Contact Us Form" },
+    { "id": 7, "title": "Test Case 7: Verify Test Cases Page" },
+    { "id": 8, "title": "Test Case 8: Verify All Products and product detail page" },
+    { "id": 9, "title": "Test Case 9: Search Product" },
+    { "id": 10, "title": "Test Case 10: Verify Subscription in home page" },
+    { "id": 11, "title": "Test Case 11: Verify Subscription in Cart page" },
+    { "id": 12, "title": "Test Case 12: Add Products in Cart" },
+    { "id": 13, "title": "Test Case 13: Verify Product quantity in Cart" },
+    { "id": 14, "title": "Test Case 14: Place Order: Register while Checkout" },
+    { "id": 15, "title": "Test Case 15: Place Order: Register before Checkout" },
+    { "id": 16, "title": "Test Case 16: Place Order: Login before Checkout" },
+    { "id": 17, "title": "Test Case 17: Remove Products From Cart" },
+    { "id": 18, "title": "Test Case 18: View Category Products" },
+    { "id": 19, "title": "Test Case 19: View & Cart Brand Products" },
+    { "id": 20, "title": "Test Case 20: Search Products and Verify Cart After Login" },
+    { "id": 21, "title": "Test Case 21: Add review on product" },
+    { "id": 22, "title": "Test Case 22: Add to cart from Recommended items" },
+    { "id": 23, "title": "Test Case 23: Verify address details in checkout page" },
+    { "id": 24, "title": "Test Case 24: Download Invoice after purchase order" },
+    { "id": 25, "title": "Test Case 25: Verify Scroll Up using 'Arrow' button and Scroll Down functionality" },
+    { "id": 26, "title": "Test Case 26: Verify Scroll Up without 'Arrow' button and Scroll Down functionality" }
+  ],
+  "testCase7": {
+    "id": 7,
+    "title": "Test Case 7: Verify Test Cases Page",
+    "description": "Verify that the Test Cases page is reachable from the home page.",
+    "requiredSteps": [
+      "1. Launch browser",
+      "2. Navigate to url 'http://automationexercise.com'",
+      "3. Verify that home page is visible successfully",
+      "4. Click on 'Test Cases' button",
+      "5. Verify user is navigated to test cases page successfully"
+    ],
+    "expectedHeading": "Test Cases",
+    "expectedPath": "/test_cases"
+  }
+}

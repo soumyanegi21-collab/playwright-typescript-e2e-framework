@@ -1,0 +1,2 @@
+Contact request GET https://automationexercise.com/contact_us
+Contact response 200 GET https://automationexercise.com/contact_us

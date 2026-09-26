@@ -1,0 +1,5 @@
+{
+  "emailPrefix": "framework-newsletter",
+  "emailDomain": "example.com",
+  "expectedSuccess": "You have been successfully subscribed!"
+}

@@ -1,0 +1,25 @@
+{
+  "search": {
+    "term": "Top",
+    "expectedHeading": "Searched Products"
+  },
+  "cartProduct": {
+    "name": "Blue Top",
+    "quantity": 4
+  },
+  "category": {
+    "name": "Women",
+    "subcategory": "Dress",
+    "route": "/category_products/1",
+    "expectedProduct": "Sleeveless Dress"
+  },
+  "brand": {
+    "name": "Polo",
+    "expectedProduct": "Blue Top"
+  },
+  "review": {
+    "name": "Framework Review Test",
+    "email": "framework.review@example.com",
+    "message": "This product review is submitted by the Playwright UI suite."
+  }
+}

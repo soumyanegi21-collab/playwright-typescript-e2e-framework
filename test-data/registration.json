@@ -1,0 +1,26 @@
+{
+  "newUser": {
+    "name": "Framework Test User",
+    "emailPrefix": "framework-user",
+    "emailDomain": "example.com",
+    "details": {
+      "title": "Mr.",
+      "password": "FrameworkTest123!",
+      "birthDay": "10",
+      "birthMonth": "May",
+      "birthYear": "1990",
+      "newsletter": true,
+      "partnerOffers": true,
+      "firstName": "Framework",
+      "lastName": "User",
+      "company": "Example QA",
+      "address": "100 Test Street",
+      "address2": "Suite 1",
+      "country": "United States",
+      "state": "California",
+      "city": "Los Angeles",
+      "zipcode": "90001",
+      "mobileNumber": "5550101234"
+    }
+  }
+}

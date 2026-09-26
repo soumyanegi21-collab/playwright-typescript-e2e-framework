@@ -1,0 +1,14 @@
+{
+  "form": {
+    "name": "Framework Contact Test",
+    "email": "framework.contact@example.com",
+    "subject": "Automation framework feedback",
+    "message": "Submitting a contact form as part of the UI automation suite."
+  },
+  "upload": {
+    "fileName": "contact-test.txt",
+    "mimeType": "text/plain",
+    "content": "Playwright contact form test attachment"
+  },
+  "expectedSuccess": "Success! Your details have been submitted successfully."
+}

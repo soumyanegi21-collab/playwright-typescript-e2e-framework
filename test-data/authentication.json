@@ -1,0 +1,7 @@
+{
+  "invalidLogin": {
+    "email": "invalid.user@example.com",
+    "password": "InvalidPassword123!",
+    "expectedError": "Your email or password is incorrect!"
+  }
+}
