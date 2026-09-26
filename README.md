@@ -55,7 +55,7 @@ npm run test:ui
 
 ## Reports
 
-The latest report from a push to `main` is published on [GitHub Pages](https://soumyanegi21-collab.github.io/playwright-typescript-e2e-framework/). The first deployment requires GitHub Pages to use **GitHub Actions** as its build and deployment source in the repository settings.
+The latest report from a push to `main` is published on [GitHub Pages](https://soumyanegi21-collab.github.io/playwright-typescript-e2e-framework/). The workflow configures Pages and deploys the report automatically.
 
 The Playwright HTML report is generated at `playwright-report/`. Open it with:
 
